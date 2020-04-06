@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.orbund</groupId>
 	<artifactId>galactic-be-common-entities</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>galactic-be-common-entities</name>
-	<description>Orbund galactic backend common entities project for School Information Management</description>
+	<description>Orbund galactic backend common entities project for School Information System</description>
 
 	<properties>
 		<java.version>1.8</java.version>
