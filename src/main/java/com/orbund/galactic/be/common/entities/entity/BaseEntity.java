@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @EqualsAndHashCode(of = {"id", "active"})
-@ToString()
+@ToString
 @MappedSuperclass
 public abstract class BaseEntity implements Serializable {
 
@@ -25,10 +25,12 @@ public abstract class BaseEntity implements Serializable {
 
     private boolean active = true;
 
-    @Column(name = "created_date", columnDefinition = "TIMESTAMP")
+    @Basic
+    @Column(name = "created_date")
     private LocalDateTime createdDate;
 
-    @Column(name = "updated_date", columnDefinition = "TIMESTAMP")
+    @Basic
+    @Column(name = "updated_date")
     private LocalDateTime updatedDate;
 
     @Column(name = "created_by")
